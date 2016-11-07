@@ -1,0 +1,204 @@
+/*@media(max-width:767px){
+
+}*/
+
+/* Small */
+@media(min-width:768px) and (max-width:991px){
+
+  body{
+    font-size:18px;
+    text-align: center;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+  .container-fluid{ padding: 30px 44px; }
+
+  header .container-fluid{
+    padding-bottom: 0;
+  }
+  .ayakoImage{
+    display: none;
+  }
+
+  #Moi{
+    display: none;
+  }
+
+    .logo{
+      font-size: 3rem;
+
+    }
+
+    .navbar-nav {
+        float: right;
+    }
+
+   .navbar-nav > li { font-size: 0.7em; }
+
+   .moreSuper{ font-size: 2rem;}
+
+   .moreSuper a{ padding: 2rem 3.2rem; }
+
+   h4{ text-align: left; }
+
+   .works p{
+     text-align: left;
+     font-size: 0.8em;
+   }
+
+
+    ul.social-network li{
+      margin: 0 10px;
+    }
+
+   .social-circle li a {
+       width: 60px;
+       height: 60px;
+       font-size: 20px;
+     }
+
+     .social-circle li i {
+         margin: 0;
+         line-height: 60px;
+         text-align: center;
+     }
+
+     .copyright{
+       font-size: 0.8em;
+       text-align:center;
+     }
+
+     .kaushan-title{
+       font-size:2em;
+     }
+
+
+
+/*---------------OTHER PAGES-------------------------------------------*/
+
+     .aboutPage h4{
+       font-size: 1.2em;
+     }
+
+
+     .contactInfo{
+       font-size: 0.8em;
+       line-height: 2em;
+     }
+
+     .yourEmail{
+       padding-left: 0;
+     }
+
+
+
+}/*@media(min-width:768px) and (max-width:991px)*/
+
+
+
+
+@media(min-width:500px) and (max-width:991px){
+
+  .container-fluid{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+}
+
+
+
+
+/* Medium */
+
+
+
+@media(min-width:992px) /*and (max-width:1199px)*/{
+
+  body{
+    font-size:20px;
+    text-align: center;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  .copyright{
+    font-size: 12px;
+  }
+  .container-fluid{
+    padding: 30px 60px;
+  }
+
+  header .container-fluid{
+    padding-bottom: 0;
+  }
+  .ayakoImage{
+    display: none;
+  }
+
+  #Moi{
+    display: none;
+  }
+
+    .logo{
+      font-size: 3rem;
+    }
+
+    .navbar-nav {
+        float: right;
+    }
+
+   .navbar-nav > li { font-size: 0.7em; }
+
+   .moreSuper{ font-size: 2.4rem;}
+
+   .moreSuper a{ padding: 2rem 3.2rem; }
+
+   h4{ text-align: left; }
+
+   .works{
+     margin-top: 20px;
+     margin-bottom: 0;
+   }
+
+   .works p{
+     text-align: left;
+     font-size: 0.8em;
+   }
+
+   .social-circle li a {
+       width: 60px;
+       height: 60px;
+       font-size: 26px;
+     }
+
+     .social-circle li i {
+         margin: 0;
+         line-height: 60px;
+         text-align: center;
+     }
+
+     .copyright{
+       font-size: 0.8em
+     }
+
+     .kaushan-title{
+       font-size:2em;
+     }
+
+
+     div.yourEmail{
+       padding-left: 0;
+     }
+
+
+ }
+
+/* Large */
+/*@media(min-width:1200px){ }*/

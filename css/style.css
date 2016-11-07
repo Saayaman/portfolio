@@ -1,0 +1,14 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+@import url('font-awesome.min.css');
+@import url('bootsrap.css');
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Paytone+One');
+
+@import url("main.css");
+/*@import url("about.css");*/
+
+@import url("mediaQuery.css");
+@import url('animate.css');
