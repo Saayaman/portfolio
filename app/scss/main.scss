@@ -1,20 +1,23 @@
+$paytone: 'Paytone One', sans-serif;
+$light-green: #00bd7e;
+$deep-yellow: #ffd800;
+
 
 
 body{
-	font-family: 'Paytone One', sans-serif !important;
+	font-family:  $paytone;
 	color: white;
 }
 
 a{
-	color: white;
+	color: white
 }
 
 .underline a{
 	-webkit-transition: 0.4s ease;
  -moz-transition: 0.4s ease;
- -o-transition: 0.4s ease;
  transition: 0.4s ease;
-	text-decoration: underline;
+text-decoration: underline;
 	color: white;
 }
 
@@ -36,7 +39,7 @@ h1, h2, h3{
 
 .kaushan{
 	font-family: 'Kaushan Script', cursive !important;
-	color: #ffd800
+	color: $deep-yellow
 }
 
 .kaushan-title{
@@ -51,7 +54,7 @@ h1, h2, h3{
 .blackText, p, .copyright{
 	color: black;
 	opacity: 0.85;
-     ilter: Alpha(opacity=85); /* IE8 and earlier */
+  filter: Alpha(opacity=85); /* IE8 and earlier */
 }
 
 .pageTitle{
@@ -71,27 +74,27 @@ section{
 }
 
 
-.homePage section:first-child{
-	background:
-}
+// .homePage section:first-child{
+// 	background:
+// }
 
 /*-backgroundColor------------------------------------------------*/
 
 
 .section-home, .homePage nav{
-	background: #ff8a00;
+	background: $light-green;
 }
 
 .section-about, .aboutPage/*.aboutPage nav, .aboutPage footer*/{
-	background: #00bd7e;
+	background: $light-green
 }
 
 .section-works, .worksPage{
-	background: #448aca;
+	background: #08397e;
 }
 
 .section-contact, .contactPage, .homePage footer{
-	background: #ad5d5d;
+	background: $light-green;
 }
 
 
@@ -131,20 +134,20 @@ header ul li{
 }
 
 #menuBtn a{
-	color: #ff8a00;
+	color: $light-green;
 }
 
 
 .navbar li a.active{
-	color: #ffd800;
+	color: $deep-yellow;
 }
 
 
 /*ALL sections===============================================*/
 
 section{
-	padding-top: 40px
-	padding-bottom: 40px
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 
@@ -159,9 +162,8 @@ section{
 }
 
 .moreSuper a{
-	-webkit-transition: 0.4s ease;
+-webkit-transition: 0.4s ease;
  -moz-transition: 0.4s ease;
- -o-transition: 0.4s ease;
  transition: 0.4s ease;
 	font-size: 1em;
 	padding: 1.2em;
@@ -297,13 +299,12 @@ a.socialIcon:hover, .socialHoverClass {
 	transform: rotate(360deg);
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
-	-o-transition: all 0.2s;
 	-ms-transition: all 0.2s;
 	transition: all 0.2s;
 }
 
 .social-circle i {
-	color: #ad5d5d;
+	color: $light-green;
 	-webkit-transition: all 0.8s;
 	-moz-transition: all 0.8s;
 	-o-transition: all 0.8s;
@@ -316,11 +317,11 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 .worksPage .social-circle i{
-  color: #448aca;
+  color: #08397e;
 }
 
 .contactPage .social-circle i{
-  color: #ad5d5d;
+  color: $light-green;
 
 }
 
