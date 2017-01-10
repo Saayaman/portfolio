@@ -1,6 +1,7 @@
 
-
 var gulp        = require('gulp');
+//phpに繋げたい場合は一行足す！
+var connect     = require('gulp-connect-php');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 
@@ -12,8 +13,21 @@ gulp.task('serve', ['sass'], function() {
     });
 
     gulp.watch("app/scss/*.scss", ['sass']);
-    gulp.watch("app/*.php").on('change', browserSync.reload);
+    //gulp.watch("app/*.php").on('change', browserSync.reload);
 });
+
+gulp.task('connect-sync', function() {
+  connect.server({
+    // port:8001,
+    // base:'www'
+  }, function (){
+    browserSync({
+      proxy: 'localhost:8001'
+    });
+  });
+});
+
+
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
@@ -23,4 +37,19 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
+//よくわからないけどたした。
+gulp.task('reload', function(){
+  browserSync.reload();
+});
+
+
 gulp.task('default', ['serve']);
+gulp.watch([
+    'app/*.html',
+    'app/*.php',
+    'app/scripts/**/*.js',
+    'app/images/**/*',
+    '.tmp/fonts/**/*'
+]).on('change',function(){
+  browserSync.reload();
+};

@@ -1,42 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Super Saayaman | Portfolio of Ayakko Sayama</title>
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
+  <?php include('parts/head.php'); ?>
 </head>
   <body class="homePage">
     <header>
-    <nav class="navbar">
-      <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand logo" href="index.php">SAAYA<br><p class="lato">ayako sayama</p></a>
-          </div>
-
-          <!--another nav button-->
-
-        <div class="lato collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="index.php">HOME</a></li>
-              <li><a href="about.php">ABOUT ME</a></li>
-              <li><a href="works.php">WORKS</a></li>
-              <li><a href="contact.php">CONTACT</a></li>
-            </ul>
-        </div>
-    </div>
-    </nav>
-
+        <?php include('parts/header.php'); ?>
     </header>
     <div id="main">
       <section class="section section-home">
@@ -44,7 +13,7 @@
           <!-- <img class="ayakoImage" src="img/ayako1-2.png" alt="thatsMOI" /> -->
           <div class="pageTitle">
             <div class="wow fadeInUp kaushan kaushan-title">How are you?</div>
-            <h1 class="wow fadeInUp noMarginTop">I'M SUPER!</h1>
+            <div class="wow fadeInUp noMarginTop">I'M SUPER!</div>
             <h3 class="wow fadeInUp noMarginTop">Thanks for asking</h3>
           </div>
           <p class="wow fadeInUp lato" data-wow-duration="1s">I’m SAAYA! A web designer/developer from Japan. <span class="kaushan">Yes, the homeland of Dragonball. </span>Now I am based on Vancouver, looking for jobs!</p>
