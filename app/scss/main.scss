@@ -1,7 +1,11 @@
 $paytone: 'Paytone One', sans-serif;
-$light-green: #00bd7e;
-$deep-yellow: #ffd800;
+$monserrat: 'Montserrat', sans-serif;
+$kaushan:'Kaushan Script', cursive;
 
+$light-green: black;
+//#00bd7e;
+$deep-yellow: #ffd800;
+$deep-blue: #08397e;
 
 
 body{
@@ -13,17 +17,20 @@ a{
 	color: white
 }
 
-.underline a{
-	-webkit-transition: 0.4s ease;
- -moz-transition: 0.4s ease;
- transition: 0.4s ease;
-text-decoration: underline;
-	color: white;
-}
+.underline{
+	a{
+		-webkit-transition: 0.4s ease;
+		-moz-transition: 0.4s ease;
+		transition: 0.4s ease;
+		text-decoration: underline;
+		color: white;
+	}
 
-.underline a:hover, .underline a:active{
-	background-color: white;
-	color: black;
+	a:hover, a:active{
+		background-color: white;
+		color: black;
+	}
+
 }
 
 h1, h2, h3{
@@ -33,18 +40,18 @@ h1, h2, h3{
 
 .lato{
 	/*font-family: 'avenir', sans-serif;*/
-	font-family: 'Montserrat', sans-serif !important;
+	font-family: $monserrat;
 	font: 38px;
 }
 
 .kaushan{
-	font-family: 'Kaushan Script', cursive !important;
-	color: $deep-yellow
-}
+	font-family: $kaushan;
+	color: $deep-yellow;
 
-.kaushan-title{
-	font-size: 2.6rem;
-	/*margin-top: 30px;*/
+	&-title{
+		font-size: 2.6rem;
+		/*margin-top: 30px;*/
+	}
 }
 
 .noMarginTop{
@@ -69,30 +76,47 @@ h1, h2, h3{
 }
 
 section{
-	padding:30px 0;
+	padding:30px 40px;
+	height: 100vh;
 }
 
+.section{
 
-// .homePage section:first-child{
-// 	background:
-// }
+	&-home{
+		background: $light-green;
+	}
+
+	&-about{
+				background: $light-green;
+	}
+
+	&-contact{
+		background: $light-green;
+	}
+
+	&-works{
+		background: #08397e;
+	}
+
+}
+
 
 /*-backgroundColor------------------------------------------------*/
 
 
-.section-home, .homePage nav{
+.homePage nav{
 	background: $light-green;
 }
 
-.section-about, .aboutPage/*.aboutPage nav, .aboutPage footer*/{
-	background: $light-green
+.aboutPage{
+	background: $light-green;
 }
 
-.section-works, .worksPage{
-	background: #08397e;
+.worksPage{
+	background: $deep-blue;
 }
 
-.section-contact, .contactPage, .homePage footer{
+ .contactPage, .homePage footer{
 	background: $light-green;
 }
 
@@ -100,27 +124,28 @@ section{
 /*-header------------------------------------------------*/
 
 
+header{
 
-header .icon-bar{
-	background-color: white;
+	.icon-bar{
+		background-color: white;
+	}
+
+	ul li{
+		font-size: 2rem;
+		line-height: 1rem;
+	}
+
 }
-
-header ul li{
-	font-size: 2rem;
-	line-height: 1rem;
-}
-
 
 .logo{
 	font-size: 2.4rem;
   letter-spacing: 0.2em;
   text-align: left;
 
-}
-
-.logo .lato{
-	font-family: 'Carme', sans-serif;
-	font-size: 1rem;
+	.lato{
+		font-family: 'Carme', sans-serif;
+		font-size: 1rem;
+	}
 }
 
 #menuBtn {
@@ -130,10 +155,10 @@ header ul li{
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
-}
 
-#menuBtn a{
-	color: $light-green;
+	a{
+		color: $light-green;
+	}
 }
 
 
@@ -144,10 +169,6 @@ header ul li{
 
 /*ALL sections===============================================*/
 
-section{
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
 
 
 #main section:nth-child(1) p{
@@ -158,20 +179,21 @@ section{
 .moreSuper{
 	text-align: center;
 	margin: 3rem 0;
-}
 
-.moreSuper a{
--webkit-transition: 0.4s ease;
- -moz-transition: 0.4s ease;
- transition: 0.4s ease;
-	font-size: 1em;
-	padding: 1.2em;
-	border: 2px white solid;
-}
+	a{
+	-webkit-transition: 0.4s ease;
+	 -moz-transition: 0.4s ease;
+	 transition: 0.4s ease;
+		font-size: 1em;
+		padding: 1.2em;
+		border: 2px white solid;
+	}
 
-.moreSuper a:hover{
-	background: white;
-	color: #00bd7e;
+	a:hover{
+		background: white;
+		color: #00bd7e;
+	}
+
 }
 
 /*Sections 1 ===============================================*/
@@ -194,11 +216,13 @@ figure img{
 
 
 .works{
-	margin-top: 20px;
-}
 
-.works h4{
-	margin-bottom: 5px;
+	margin-top: 20px;
+
+	h4{
+		margin-bottom: 5px;
+	}
+
 }
 
 .worksImage{
@@ -213,14 +237,14 @@ figure img{
 
 footer{
 	padding: 20px 0;
-}
 
-footer ul{
-	text-align: center;
-}
+	ul{
+		text-align: center;
+	}
 
-footer ul li a{
-	background: white;
+	ul li a{
+		background: white;
+	}
 }
 
 .copyright{
@@ -233,14 +257,14 @@ text-align: center;
  ================= */
 
 /* footer social icons */
-ul.social-network {
+.social-network {
 	list-style: none;
 	/*display: inline;*/
 	display: block;
 	margin: auto;
 	padding: 0;
 }
-ul.social-network li {
+.social-network li {
 	display: inline;
 	margin: 0 4px;
 }
@@ -306,13 +330,12 @@ a.socialIcon:hover, .socialHoverClass {
 	color: $light-green;
 	-webkit-transition: all 0.8s;
 	-moz-transition: all 0.8s;
-	-o-transition: all 0.8s;
 	-ms-transition: all 0.8s;
 	transition: all 0.8s;
 }
 
 .aboutPage .social-circle i{
-  color: #00bd7e;
+  color: $light-green;
 }
 
 .worksPage .social-circle i{
@@ -328,18 +351,21 @@ a.socialIcon:hover, .socialHoverClass {
 /*------------about-------------------------------------------------------------*/
 
 
-.aboutPage h2{
+.aboutPage
+{
+	h2{
   text-align: center;
   line-height: 0.3em;
   margin: 1em 0;
-}
+	}
 
-.aboutPage h3, .aboutPage h4{
+	h3, h4{
   text-align: center;
 }
 
-.aboutPage h4{
-  margin:20px 0;
+	h4{
+	  margin:20px 0;
+	}
 }
 
 
@@ -363,25 +389,20 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 
-/*------------contact-------------------------------------------------------------*/
-
+/*------------contact---------------------------------------------*/
 
 .contactPage{
   text-align: left;
-}
 
-.contactPage .row .sendForm{
-  margin-bottom: 2em;
-}
+	.row .sendForm{
+	  margin-bottom: 2em;
+	}
 
-.contactPage ul li{
-  list-style: none;
-}
-/*
-.contactPage h4{
-  margin-bottom: 1.2em;
-}*/
+	ul li{
+	 list-style: none;
+ 	}
 
-.contactPage footer p.underline{
-  display: none;
+	footer p.underline{
+	  display: none;
+	}
 }

@@ -21,16 +21,15 @@ h1, h2, h3 {
 
 .lato {
   /*font-family: 'avenir', sans-serif;*/
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif;
   font: 38px; }
 
 .kaushan {
-  font-family: 'Kaushan Script', cursive !important;
+  font-family: "Kaushan Script", cursive;
   color: #ffd800; }
-
-.kaushan-title {
-  font-size: 2.6rem;
-  /*margin-top: 30px;*/ }
+  .kaushan-title {
+    font-size: 2.6rem;
+    /*margin-top: 30px;*/ }
 
 .noMarginTop {
   margin-top: 0; }
@@ -50,20 +49,33 @@ h1, h2, h3 {
     color: black; }
 
 section {
-  padding: 30px 0; }
+  padding: 30px 40px;
+  height: 100vh; }
 
-/*-backgroundColor------------------------------------------------*/
-.section-home, .homePage nav {
-  background: #00bd7e; }
+.section-home {
+  background: black; }
 
-.section-about, .aboutPage {
-  background: #00bd7e; }
+.section-about {
+  background: black; }
 
-.section-works, .worksPage {
+.section-contact {
+  background: black; }
+
+.section-works {
   background: #08397e; }
 
-.section-contact, .contactPage, .homePage footer {
-  background: #00bd7e; }
+/*-backgroundColor------------------------------------------------*/
+.homePage nav {
+  background: black; }
+
+.aboutPage {
+  background: black; }
+
+.worksPage {
+  background: #08397e; }
+
+.contactPage, .homePage footer {
+  background: black; }
 
 /*-header------------------------------------------------*/
 header .icon-bar {
@@ -77,10 +89,9 @@ header ul li {
   font-size: 2.4rem;
   letter-spacing: 0.2em;
   text-align: left; }
-
-.logo .lato {
-  font-family: 'Carme', sans-serif;
-  font-size: 1rem; }
+  .logo .lato {
+    font-family: 'Carme', sans-serif;
+    font-size: 1rem; }
 
 #menuBtn {
   width: 40px;
@@ -89,36 +100,29 @@ header ul li {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px; }
-
-#menuBtn a {
-  color: #00bd7e; }
+  #menuBtn a {
+    color: black; }
 
 .navbar li a.active {
   color: #ffd800; }
 
 /*ALL sections===============================================*/
-section {
-  padding-top: 40px;
-  padding-bottom: 40px; }
-
 #main section:nth-child(1) p {
   margin: 20px 0; }
 
 .moreSuper {
   text-align: center;
   margin: 3rem 0; }
-
-.moreSuper a {
-  -webkit-transition: 0.4s ease;
-  -moz-transition: 0.4s ease;
-  transition: 0.4s ease;
-  font-size: 1em;
-  padding: 1.2em;
-  border: 2px white solid; }
-
-.moreSuper a:hover {
-  background: white;
-  color: #00bd7e; }
+  .moreSuper a {
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    transition: 0.4s ease;
+    font-size: 1em;
+    padding: 1.2em;
+    border: 2px white solid; }
+  .moreSuper a:hover {
+    background: white;
+    color: #00bd7e; }
 
 /*Sections 1 ===============================================*/
 figure img {
@@ -135,9 +139,8 @@ figure img {
 /*Sections 3 works ===============================================*/
 .works {
   margin-top: 20px; }
-
-.works h4 {
-  margin-bottom: 5px; }
+  .works h4 {
+    margin-bottom: 5px; }
 
 .worksImage {
   max-width: 100%; }
@@ -148,12 +151,10 @@ figure img {
 /*-footer------------------------------------------------*/
 footer {
   padding: 20px 0; }
-
-footer ul {
-  text-align: center; }
-
-footer ul li a {
-  background: white; }
+  footer ul {
+    text-align: center; }
+  footer ul li a {
+    background: white; }
 
 .copyright {
   font-size: 1rem;
@@ -164,14 +165,14 @@ footer ul li a {
   Icons
  ================= */
 /* footer social icons */
-ul.social-network {
+.social-network {
   list-style: none;
   /*display: inline;*/
   display: block;
   margin: auto;
   padding: 0; }
 
-ul.social-network li {
+.social-network li {
   display: inline;
   margin: 0 4px; }
 
@@ -229,21 +230,20 @@ a.socialIcon:hover, .socialHoverClass {
   transition: all 0.2s; }
 
 .social-circle i {
-  color: #00bd7e;
+  color: black;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
   -ms-transition: all 0.8s;
   transition: all 0.8s; }
 
 .aboutPage .social-circle i {
-  color: #00bd7e; }
+  color: black; }
 
 .worksPage .social-circle i {
   color: #08397e; }
 
 .contactPage .social-circle i {
-  color: #00bd7e; }
+  color: black; }
 
 /*------------about-------------------------------------------------------------*/
 .aboutPage h2 {
@@ -272,19 +272,12 @@ a.socialIcon:hover, .socialHoverClass {
   margin: 10px;
   padding-top: 10px; }
 
-/*------------contact-------------------------------------------------------------*/
+/*------------contact---------------------------------------------*/
 .contactPage {
   text-align: left; }
-
-.contactPage .row .sendForm {
-  margin-bottom: 2em; }
-
-.contactPage ul li {
-  list-style: none; }
-
-/*
-.contactPage h4{
-  margin-bottom: 1.2em;
-}*/
-.contactPage footer p.underline {
-  display: none; }
+  .contactPage .row .sendForm {
+    margin-bottom: 2em; }
+  .contactPage ul li {
+    list-style: none; }
+  .contactPage footer p.underline {
+    display: none; }
